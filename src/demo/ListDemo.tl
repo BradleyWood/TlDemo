@@ -14,9 +14,9 @@ fun main() {
     var numbers = [];
 
     var running = true;
-    while(running == true) {
+    while (running) {
         var line = readLine();
-        if(line == done) {
+        if (line == done) {
             running = false;
         } else {
             numbers += line;
@@ -25,16 +25,3 @@ fun main() {
     println("Before... " + numbers);
     println("After... " + reverse(numbers));
 }
-
-fun reverse(list) {
-    var count = len(list) - 1;
-    var tmp = -1;
-    var numbers = [];
-    while(count >= 0) {
-        numbers += list[count];
-        count -= 1;
-    }
-    return numbers;
-}
-
-
