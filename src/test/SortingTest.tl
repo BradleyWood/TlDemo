@@ -1,6 +1,5 @@
 package test;
 
-import org.toylang.core.Timer;
 import java.util.Random;
 
 // compare builtin sort vs quick sort
@@ -15,9 +14,9 @@ fun testBuiltinSort() {
     for i range 0 to 10000000
         list = list + rand.nextInt();
 
-    var timer = Timer();
+    var startTime = System.currentTimeMillis();
     sort(list);
-    var elapsed = timer.elapsed();
+    var elapsed = System.currentTimeMillis() - startTime;
     println("Builtin sort: Elapsed " + elapsed + " ms.");
 }
 
@@ -27,9 +26,9 @@ fun testQuicksort() {
     for i range 0 to 10000000
         list = list + rand.nextInt();
 
-    var timer = Timer();
+    var startTime = System.currentTimeMillis();
     quickSort(list, 0, len(list) - 1);
-    var elapsed = timer.elapsed();
+    var elapsed = System.currentTimeMillis() - startTime;
     println("Quicksort: Elapsed " + elapsed + " ms.");
 }
 

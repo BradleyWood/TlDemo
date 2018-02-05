@@ -1,6 +1,5 @@
 package test;
 
-import org.toylang.core.Timer;
 import java.util.Random;
 
 fun main() {
@@ -16,41 +15,51 @@ fun test() {
 }
 
 fun bm1() {
-    var timer = Timer();
+    var startTime = System.currentTimeMillis();
     var testStr = "asdasdasdbgdasdagedtrf[plwed[l21q3r[p123412`13asdasd";
     for i range 0 to 5000000 str(testStr);
-    println("Elapsed "+(timer.elapsed()) + " ms");
+    var elapsed = System.currentTimeMillis() - startTime;
+    println("Elapsed "+ elapsed + " ms");
 }
+
 fun bm2() {
-    var timer = Timer();
+    var startTime = System.currentTimeMillis();
     var testStr = "9999999";
     for i range 0 to 5000000 int(testStr);
-    println("Elapsed "+(timer.elapsed()) + " ms");
+    var elapsed = System.currentTimeMillis() - startTime;
+    println("Elapsed "+ elapsed + " ms");
 }
+
 fun bm3() {
-    var timer = Timer();
+    var startTime = System.currentTimeMillis();
     var lst = [];
     var rand = Random();
     for i range 0 to 200000 lst = lst + rand.nextInt();
     sort(lst);
-    println("Elapsed "+(timer.elapsed()) + " ms");
+    var elapsed = System.currentTimeMillis() - startTime;
+    println("Elapsed "+ elapsed + " ms");
 }
+
 fun bm4() {
-    var timer = Timer();
+    var startTime = System.currentTimeMillis();
     var lst = [];
     var rand = Random();
     for i range 0 to 20000 lst = lst + rand.nextInt();
     bubbleSort(lst);
-    println("Elapsed "+(timer.elapsed()) + " ms");
+    var elapsed = System.currentTimeMillis() - startTime;
+    println("Elapsed "+ elapsed + " ms");
 }
+
 fun bm5() {
-    var timer = Timer();
+    var startTime = System.currentTimeMillis();
     var lst = [];
     var rand = Random();
     for i range 0 to 20000 lst = lst + rand.nextInt();
     selectionSort(lst);
-    println("Elapsed "+(timer.elapsed()) + " ms");
+    var elapsed = System.currentTimeMillis() - startTime;
+    println("Elapsed "+ elapsed + " ms");
 }
+
 fun bubbleSort(list) {
     var tmp = 0;
     for i range 0 to len(list) {
@@ -63,6 +72,7 @@ fun bubbleSort(list) {
         }
     }
 }
+
 fun selectionSort(list) {
     var tmp = 0;
     for i range 0 to (len(list)-1) {
