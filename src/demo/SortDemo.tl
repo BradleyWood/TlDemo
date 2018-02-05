@@ -11,17 +11,16 @@ fun main() {
     println("Welcome to the sort demo!");
     println("For each line, enter a number. Type " + done + " when you are done");
 
-
     var numbers = [];
 
     var running = true;
-    while(running == true) {
+    while(running) {
         var line = readLine();
-        if(line == done) {
+        if line == done
             running = false;
-        } else {
+        else
             numbers += int(line);
-        }
+
     }
     println("Before... " + numbers);
     sort(numbers);
