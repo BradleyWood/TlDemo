@@ -27,4 +27,11 @@ fun main() {
 }
 ```
 
-####
+#### Go routines
+
+A go routine can be created by using the ```go``` keyword followed by
+function invocation.
+
+```
+go aFunction();
+```
