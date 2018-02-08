@@ -1,0 +1,141 @@
+Compiled from "D:\IdeaProjects\TlDemo\src\demo\SortDemo.tl"
+public class demo.SortDemo {
+  static org.toylang.core.wrappers.TObject rand;
+
+  static org.toylang.core.wrappers.TObject done;
+
+  public demo.SortDemo();
+    Code:
+       0: aload_0
+       1: invokespecial #15                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: invokestatic  #23                 // Method toylang/Builtin.println:()Lorg/toylang/core/wrappers/TObject;
+       3: pop
+       4: getstatic     #25                 // Field __CONSTANTS__:[Lorg/toylang/core/wrappers/TObject;
+       7: ldc           #26                 // int 0
+       9: aaload
+      10: invokestatic  #29                 // Method toylang/Builtin.println:(Lorg/toylang/core/wrappers/TObject;)Lorg/toylang/core/wrappers/TObject;
+      13: pop
+      14: getstatic     #25                 // Field __CONSTANTS__:[Lorg/toylang/core/wrappers/TObject;
+      17: ldc           #30                 // int 1
+      19: aaload
+      20: getstatic     #32                 // Field done:Lorg/toylang/core/wrappers/TObject;
+      23: invokevirtual #37                 // Method org/toylang/core/wrappers/TObject.add:(Lorg/toylang/core/wrappers/TObject;)Lorg/toylang/core/wrappers/TObject;
+      26: getstatic     #25                 // Field __CONSTANTS__:[Lorg/toylang/core/wrappers/TObject;
+      29: ldc           #38                 // int 2
+      31: aaload
+      32: invokevirtual #37                 // Method org/toylang/core/wrappers/TObject.add:(Lorg/toylang/core/wrappers/TObject;)Lorg/toylang/core/wrappers/TObject;
+      35: invokestatic  #29                 // Method toylang/Builtin.println:(Lorg/toylang/core/wrappers/TObject;)Lorg/toylang/core/wrappers/TObject;
+      38: pop
+      39: new           #40                 // class org/toylang/core/wrappers/TList
+      42: dup
+      43: invokespecial #41                 // Method org/toylang/core/wrappers/TList."<init>":()V
+      46: astore_1
+      47: getstatic     #25                 // Field __CONSTANTS__:[Lorg/toylang/core/wrappers/TObject;
+      50: ldc           #42                 // int 3
+      52: aaload
+      53: astore_2
+      54: goto          93
+      57: invokestatic  #45                 // Method toylang/Builtin.readLine:()Lorg/toylang/core/wrappers/TObject;
+      60: astore_3
+      61: aload_3
+      62: getstatic     #32                 // Field done:Lorg/toylang/core/wrappers/TObject;
+      65: invokevirtual #48                 // Method org/toylang/core/wrappers/TObject.EQ:(Lorg/toylang/core/wrappers/TObject;)Lorg/toylang/core/wrappers/TObject;
+      68: invokevirtual #52                 // Method org/toylang/core/wrappers/TObject.isTrue:()Z
+      71: ifeq          84
+      74: getstatic     #25                 // Field __CONSTANTS__:[Lorg/toylang/core/wrappers/TObject;
+      77: ldc           #53                 // int 4
+      79: aaload
+      80: astore_2
+      81: goto          93
+      84: aload_1
+      85: aload_3
+      86: invokestatic  #56                 // Method toylang/Builtin.int:(Lorg/toylang/core/wrappers/TObject;)Lorg/toylang/core/wrappers/TObject;
+      89: invokevirtual #37                 // Method org/toylang/core/wrappers/TObject.add:(Lorg/toylang/core/wrappers/TObject;)Lorg/toylang/core/wrappers/TObject;
+      92: astore_1
+      93: aload_2
+      94: invokevirtual #52                 // Method org/toylang/core/wrappers/TObject.isTrue:()Z
+      97: ifne          57
+     100: getstatic     #25                 // Field __CONSTANTS__:[Lorg/toylang/core/wrappers/TObject;
+     103: ldc           #57                 // int 5
+     105: aaload
+     106: aload_1
+     107: invokevirtual #37                 // Method org/toylang/core/wrappers/TObject.add:(Lorg/toylang/core/wrappers/TObject;)Lorg/toylang/core/wrappers/TObject;
+     110: invokestatic  #29                 // Method toylang/Builtin.println:(Lorg/toylang/core/wrappers/TObject;)Lorg/toylang/core/wrappers/TObject;
+     113: pop
+     114: aload_1
+     115: invokestatic  #60                 // Method toylang/Builtin.sort:(Lorg/toylang/core/wrappers/TObject;)Lorg/toylang/core/wrappers/TObject;
+     118: pop
+     119: getstatic     #25                 // Field __CONSTANTS__:[Lorg/toylang/core/wrappers/TObject;
+     122: ldc           #61                 // int 6
+     124: aaload
+     125: aload_1
+     126: invokevirtual #37                 // Method org/toylang/core/wrappers/TObject.add:(Lorg/toylang/core/wrappers/TObject;)Lorg/toylang/core/wrappers/TObject;
+     129: invokestatic  #29                 // Method toylang/Builtin.println:(Lorg/toylang/core/wrappers/TObject;)Lorg/toylang/core/wrappers/TObject;
+     132: pop
+     133: return
+
+  static {};
+    Code:
+       0: ldc           #63                 // int 7
+       2: anewarray     #34                 // class org/toylang/core/wrappers/TObject
+       5: dup
+       6: ldc           #26                 // int 0
+       8: new           #65                 // class org/toylang/core/wrappers/TString
+      11: dup
+      12: ldc           #67                 // String Welcome to the sort demo!
+      14: invokespecial #70                 // Method org/toylang/core/wrappers/TString."<init>":(Ljava/lang/String;)V
+      17: aastore
+      18: dup
+      19: ldc           #30                 // int 1
+      21: new           #65                 // class org/toylang/core/wrappers/TString
+      24: dup
+      25: ldc           #72                 // String For each line, enter a number. Type
+      27: invokespecial #70                 // Method org/toylang/core/wrappers/TString."<init>":(Ljava/lang/String;)V
+      30: aastore
+      31: dup
+      32: ldc           #38                 // int 2
+      34: new           #65                 // class org/toylang/core/wrappers/TString
+      37: dup
+      38: ldc           #74                 // String  when you are done
+      40: invokespecial #70                 // Method org/toylang/core/wrappers/TString."<init>":(Ljava/lang/String;)V
+      43: aastore
+      44: dup
+      45: ldc           #42                 // int 3
+      47: getstatic     #80                 // Field org/toylang/core/wrappers/TBoolean.TRUE:Lorg/toylang/core/wrappers/TBoolean;
+      50: aastore
+      51: dup
+      52: ldc           #53                 // int 4
+      54: getstatic     #83                 // Field org/toylang/core/wrappers/TBoolean.FALSE:Lorg/toylang/core/wrappers/TBoolean;
+      57: aastore
+      58: dup
+      59: ldc           #57                 // int 5
+      61: new           #65                 // class org/toylang/core/wrappers/TString
+      64: dup
+      65: ldc           #85                 // String Before...
+      67: invokespecial #70                 // Method org/toylang/core/wrappers/TString."<init>":(Ljava/lang/String;)V
+      70: aastore
+      71: dup
+      72: ldc           #61                 // int 6
+      74: new           #65                 // class org/toylang/core/wrappers/TString
+      77: dup
+      78: ldc           #87                 // String After...
+      80: invokespecial #70                 // Method org/toylang/core/wrappers/TString."<init>":(Ljava/lang/String;)V
+      83: aastore
+      84: putstatic     #25                 // Field __CONSTANTS__:[Lorg/toylang/core/wrappers/TObject;
+      87: ldc           #89                 // class java/util/Random
+      89: new           #40                 // class org/toylang/core/wrappers/TList
+      92: dup
+      93: invokespecial #41                 // Method org/toylang/core/wrappers/TList."<init>":()V
+      96: invokestatic  #93                 // Method org/toylang/core/wrappers/TObject.newObj:(Ljava/lang/Class;Lorg/toylang/core/wrappers/TObject;)Lorg/toylang/core/wrappers/TObject;
+      99: putstatic     #95                 // Field rand:Lorg/toylang/core/wrappers/TObject;
+     102: new           #65                 // class org/toylang/core/wrappers/TString
+     105: dup
+     106: ldc           #96                 // String done
+     108: invokespecial #70                 // Method org/toylang/core/wrappers/TString."<init>":(Ljava/lang/String;)V
+     111: putstatic     #32                 // Field done:Lorg/toylang/core/wrappers/TObject;
+     114: return
+}
