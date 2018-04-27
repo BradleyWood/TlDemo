@@ -3,15 +3,15 @@ package demo;
 import java.lang.Thread;
 import java.lang.Runnable;
 
-public class SomeRunnableClass implements Runnable {
+class SomeRunnableClass implements Runnable {
 
     @Override
-    public fun run() {
+    fun run() {
         ThreadDemo.aFunction();
     }
 }
 
-public fun aFunction() {
+fun aFunction() {
     println("This not the main thread!");
 }
 

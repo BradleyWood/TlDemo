@@ -4,20 +4,17 @@ import java.util.Random;
 
 var rand = Random();
 
-var done = "done";
-
 fun main() {
     println();
     println("Welcome to the sort demo!");
-    println("For each line, enter a number. Type " + done + " when you are done");
+    println("For each line, enter a number. Type done when you are done");
 
     var numbers = [];
 
-    var running = true;
-    while(running) {
+    while(true) {
         var line = readLine();
-        if line == done
-            running = false;
+        if line == "done"
+            break;
         else
             numbers += int(line);
 

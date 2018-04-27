@@ -13,9 +13,9 @@ public class TestFrame extends JFrame {
 
     public constructor(title) {
         super(str(title));
-        setSize(400, 400);
-        add(JButton("A button..."));
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
+        //setSize(400, 400);
+        //add(JButton("A button..."));
+        //setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //setVisible(true);
     }
 }
