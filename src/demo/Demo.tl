@@ -1,29 +1,29 @@
-package demo;
+package demo
 
-import java.util.Random;
+import java.util.Random
 
-var rand = Random();
+var rand = Random()
 
 fun main() {
-    println();
-    println("Welcome to the test language demo!");
-    println("Lets demonstrate simple I/O!");
+    println()
+    println("Welcome to the test language demo!")
+    println("Lets demonstrate simple I/O!")
 
-    println();
-    println();
+    println()
+    println()
 
-    println("What is your name?");
-    var name = readLine();
+    println("What is your name?")
+    var name = readLine()
 
-    println("Hello, " + name);
-    println("Pick a number between 0 and 10");
+    println("Hello, " + name)
+    println("Pick a number between 0 and 10")
 
-    var num = rand.nextInt(10);
-    var input = int(readLine());
+    var num = rand.nextInt(10)
+    var input = int(readLine())
 
     if(input == num) {
-        println("Congrats you guessed correctly!");
+        println("Congrats you guessed correctly!")
     } else {
-        println("Sorry, you picked wrong!");
+        println("Sorry, you picked wrong!")
     }
 }

@@ -1,25 +1,25 @@
-package demo;
+package demo
 
-import java.util.Random;
+import java.util.Random
 
-var rand = Random();
+var rand = Random()
 
 fun main() {
-    println();
-    println("Welcome to the sort demo!");
-    println("For each line, enter a number. Type done when you are done");
+    println()
+    println("Welcome to the sort demo!")
+    println("For each line, enter a number. Type done when you are done")
 
-    var numbers = [];
+    var numbers = []
 
     while(true) {
-        var line = readLine();
+        var line = readLine()
         if line == "done"
-            break;
+            break
         else
-            numbers += int(line);
+            numbers += int(line)
 
     }
-    println("Before... " + numbers);
-    sort(numbers);
-    println("After... " + numbers);
+    println("Before... " + numbers)
+    sort(numbers)
+    println("After... " + numbers)
 }

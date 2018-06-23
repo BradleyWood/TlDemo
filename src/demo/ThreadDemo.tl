@@ -1,26 +1,26 @@
-package demo;
+package demo
 
-import java.lang.Thread;
-import java.lang.Runnable;
+import java.lang.Thread
+import java.lang.Runnable
 
 class SomeRunnableClass implements Runnable {
 
     @Override
     fun run() {
-        ThreadDemo.aFunction();
+        ThreadDemo.aFunction()
     }
 }
 
 fun aFunction() {
-    println("This not the main thread!");
+    println("This not the main thread!")
 }
 
 fun main() {
     // go routine
-    go aFunction();
+    go aFunction()
 
     // or create a thread with a runnable type
-    var thread = Thread(SomeRunnableClass());
-    thread.start();
-    thread.join();
+    var thread = Thread(SomeRunnableClass())
+    thread.start()
+    thread.join()
 }
