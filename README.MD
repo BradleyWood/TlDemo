@@ -7,7 +7,7 @@ This repository contains a few demo programs for my JVM language.
 
 The math demo serves to display the simplicity of mathematical functions.
 
-```
+```java
 f(x) = x**2 + x + 1;
 
 g(x) = 4 * x + 50;
@@ -18,7 +18,7 @@ g(x) = 4 * x + 50;
 
 A simple example of java interop.
 
-```
+```java
 import javax.swing.JOptionPane;
 
 fun main() {
@@ -32,6 +32,6 @@ fun main() {
 A go routine can be created by using the ```go``` keyword followed by
 function invocation.
 
-```
+```java
 go aFunction();
 ```
